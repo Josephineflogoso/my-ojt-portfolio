@@ -95,12 +95,12 @@ header {
    justify-content: space-between;
 }
 
-.header .header-2 .flex .navbar h1 {
+.header .header-2 .flex h1 {
    font-size: 30px;
    color: var(--white);
 }
 
-.header .header-2 .flex .navbar h1 span {
+.header .header-2 .flex h1 span {
    color: var(--orange);
 }
 
@@ -113,7 +113,7 @@ header {
 
 }
 
-.header .header-2 .flex .navbar .menu {
+.header .header-2 .flex .navbar{
    margin-left: 570px;
    width: 100%;
    margin-top: 3px;
@@ -220,18 +220,17 @@ header {
 }
 
 .about h1 {
-   font-size: 1.7rem;
+   font-size: 2.4rem;
    color: var(--light-color);
    line-height: 1.8;
    padding: 1rem 0;
 }
 
 .about p {
-   font-size: 1.7rem;
+   font-size: 1.9rem;
    color: var(--light-color);
    line-height: 1.8;
    padding: 1rem 0;
-   text-align: justify;
 
 }
 
@@ -250,14 +249,14 @@ header {
 }
 
 .experience h1 {
-   font-size: 1.7rem;
+   font-size: 2.4rem;
    color: var(--light-color);
    line-height: 1.8;
    padding: 1rem 0;
 }
 
 .experience p {
-   font-size: 1.7rem;
+   font-size: 1.9rem;
    color: var(--light-color);
    line-height: 1.8;
    padding: 1rem 0;
@@ -286,25 +285,24 @@ header {
 }
 
 .hobbies h1 {
-   font-size: 1.7rem;
+   font-size: 2.4rem;
    color: var(--light-color);
    line-height: 1.8;
    padding: 1rem 0;
 }
 
 .hobbies p{
-   font-size: 1.7rem;
+   font-size: 1.9rem;
    color: var(--light-color);
    line-height: 1.8;
    padding: 1rem 0;
    text-align: justify;
-   margin-left: 1rem;
+   margin-left: 10%;
 }
 
 .hobbies p img{
    width: 70%;
    height: 70%;
-   margin-top: 15%;
    display: grid;
 }
 
@@ -328,24 +326,32 @@ header {
 }
 
 .discover h1 {
-   font-size: 1.7rem;
+   font-size: 2.4rem;
    color: var(--light-color);
    line-height: 1.8;
    padding: 1rem 0;
 }
 
 .discover p {
-   font-size: 1.7rem;
+   font-size: 1.9rem;
    color: var(--light-color);
    line-height: 1.8;
    padding: 1rem 0;
    text-align: justify;
    margin-left: 4rem;
 }
-.discover p img{
+
+.discover .falls p {
+   font-size: 1.9rem;
+   color: var(--light-color);
+   line-height: 1.8;
+   padding: 1rem 0;
+   text-align: justify;
+   margin-left: 10%;
+}
+.discover .falls p img{
    width: 70%;
-   height: 60%;
-   margin-top: 15%;
+   height: 50%;
    display: grid;
 }
 
@@ -354,6 +360,10 @@ header {
    display: flex;
    justify-content: flex-start;
    padding-left: 5%;
+}
+.travel .place{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
 }
 
 .travel img {
@@ -365,35 +375,58 @@ header {
 }
 
 .travel h1 {
-   font-size: 1.7rem;
+   font-size: 2.4rem;
    color: var(--light-color);
    line-height: 1.8;
    padding: 1rem 0;
+   
 }
 
-.travel p {
-   font-size: 1.7rem;
+.travel .place p img{
+   width: 70%;
+   height: 70%;
+   display: grid;
+}
+
+.travel .place p {
+   font-size: 1.9rem;
    color: var(--light-color);
    line-height: 1.8;
    padding: 1rem 0;
    text-align: justify;
+   margin-left: 10%;
 }
 
 .projects {
    display: flex;
-   justify-content: space-between;
+   justify-content: flex-start;
+   padding-left: 5rem;
+}
+
+.projects .ss{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.projects img {
+   width: 35rem;
+   height: 35rem;
+   margin-left: -10%;
+   margin-right: -10%;
 }
 
 .projects h1 {
-   font-size: 3rem;
+   font-size: 2rem;
    color: var(--light-color);
 }
 
-.projects p {
-   font-size: 1.7rem;
-   color: var(--light-color);
-   line-height: 1.8;
-   padding: 1rem 0;
+.projects p img{
+   width: 80%;
+   height: 100%;
+   display: grid;
+   padding-bottom: 10%;
+   margin-left: 5%;
+   margin-top: 5%
 }
 
 .footer {
@@ -422,6 +455,24 @@ header {
    color: #fff;
    padding: 1rem 0;
 }
+
+.footer .box-container .box h2{
+   color: var(--orange);
+   font-size: 2.5rem;
+   background-color: var(--orange);
+   color: var(--white);
+   border-radius: 1rem;
+   width: 16rem;
+   height: 3rem;
+   text-align: center;
+   cursor: pointer;
+}
+
+.footer .box-container .box h2:hover{
+   color: var(--orange);
+   background-color: var(--white);
+}
+   
 
 .footer .box-container .box p i,
 .footer .box-container .box a i {
@@ -465,20 +516,21 @@ header {
 
    .header .header-2 .flex .navbar{
       position: fixed;
-      top:99%; left:0; right:0;
+      top:100%; left:0; right:0;
       border-top: var(--border);
       border-bottom: var(--border);
       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
    }
 
-   .header .header-2 .flex .navbar.active{
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   .header .header-2 .flex .navbar .active{
+      clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
    }
 
    .header .header-2 .flex .navbar a{
       display: block;
       font-size: 2rem;
       margin:10rem;
+
    }
 
    .home .content h3{
@@ -495,13 +547,89 @@ header {
    html{
       font-size: 50%;
    }
+   .home{
+      width: 100%;
+   }
 
    .heading h3{
-      font-size: 3.5rem;
+      font-size: 3rem;
    }
 
    .title{
       font-size: 3rem;
    }
 
+   .about {
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 0 2rem;
+   }
+
+   .about img{
+      width: 20rem;
+   height: 20rem;
+   margin-left: -10%;
+   margin-right: -10%;
+   }
+
+   .about h1{
+      font-size: 1.3rem;
+   }
+
+   .about p{
+      font-size: 1rem;
+   }
+
+   .experience img{
+      width: 20rem;
+   height: 20rem;
+   margin-left: -10%;
+   margin-right: -10%;
+   }
+
+   .experience p{
+      font-size: 1rem;
+   }
+
+   .hobbies img{
+      width: 20rem;
+   height: 20rem;
+   margin-left: -10%;
+   margin-right: -10%;
+   }
+
+   .travel img{
+      width: 20rem;
+   height: 20rem;
+   margin-left: -10%;
+   margin-right: -10%;
+   }
+
+   .travel .place p img{
+      width: 100%;
+      height: 40%;
+      display: grid;
+   }
+   
+   .hobbies .hob p img{
+      width: 70%;
+      height: 40%;
+      display: grid;
+   }
+
+   .discover img{
+      width: 20rem;
+   height: 20rem;
+   margin-left: -10%;
+   margin-right: -10%;
+   }
+   
+   .projects img{
+      width: 20rem;
+   height: 20rem;
+   margin-left: -10%;
+   margin-right: -10%;
+   }
+
 }
+
